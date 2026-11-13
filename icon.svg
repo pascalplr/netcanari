@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="A canary's head">
+  <g fill="#FFCC00" stroke="#141414" stroke-width="5" stroke-linejoin="round">
+    <!-- crest -->
+    <path d="M48 26 Q50 4 62 18 Q66 0 75 17 Q88 6 82 30 Z"/>
+    <!-- head -->
+    <circle cx="64" cy="72" r="52"/>
+  </g>
+  <!-- eyes -->
+  <circle cx="40" cy="62" r="9" fill="#141414"/>
+  <circle cx="88" cy="62" r="9" fill="#141414"/>
+  <circle cx="43" cy="59" r="3" fill="#FFFFFF"/>
+  <circle cx="91" cy="59" r="3" fill="#FFFFFF"/>
+  <!-- beak -->
+  <path d="M64 72 L80 87 L64 106 L48 87 Z" fill="#FF8A00"/>
+  <path d="M48 87 H80" stroke="#C96300" stroke-width="3" stroke-linecap="round"/>
+</svg>

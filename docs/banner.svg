@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 128" role="img" aria-label="A canary's head cut in two along a diagonal: yellow with a round eye on the left (VPN or trusted Wi-Fi), green with a crossed-out eye on the right (VPN off or untrusted Wi-Fi)">
+  <defs>
+    <!-- the cut runs from (82,0) to (46,128), in the head's own coordinates -->
+    <clipPath id="left"><path d="M-10 -10 H84.8 L43.2 138 H-10 Z"/></clipPath>
+    <clipPath id="right"><path d="M84.8 -10 H138 V138 H43.2 Z"/></clipPath>
+    <pattern id="hazard" patternUnits="userSpaceOnUse" width="14" height="14" patternTransform="rotate(45)">
+      <rect width="14" height="14" fill="#FFCC00"/>
+      <rect width="7" height="14" fill="#141414"/>
+    </pattern>
+    <g id="beak">
+      <path d="M64 72 L80 87 L64 106 L48 87 Z" fill="#FF8A00"/>
+      <path d="M48 87 H80" stroke="#C96300" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <g id="shape" stroke="#141414" stroke-width="5" stroke-linejoin="round">
+      <path d="M48 26 Q50 4 62 18 Q66 0 75 17 Q88 6 82 30 Z"/>
+      <circle cx="64" cy="72" r="52"/>
+    </g>
+  </defs>
+
+  <!-- left label: all good -->
+  <rect x="82" y="46" width="220" height="36" rx="18" fill="#FFCC00" stroke="#141414" stroke-width="3"/>
+  <circle cx="104" cy="64" r="11" fill="#FFFFFF" stroke="#141414" stroke-width="2"/>
+  <path d="M98 64.5 L102.5 69 L110.5 59.5" fill="none" stroke="#1E8E3E" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="206" y="70" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#141414">VPN / trusted Wi-Fi</text>
+
+  <!-- right label: exposed, inside the hazard frame -->
+  <rect x="458" y="38" width="270" height="52" rx="5" fill="url(#hazard)" stroke="#141414" stroke-width="2"/>
+  <rect x="466" y="46" width="254" height="36" rx="2" fill="#8FCB3C" stroke="#141414" stroke-width="2"/>
+  <circle cx="486" cy="64" r="11" fill="#FFFFFF" stroke="#141414" stroke-width="2"/>
+  <path d="M481 59 L491 69 M491 59 L481 69" stroke="#D92D20" stroke-width="3.5" stroke-linecap="round"/>
+  <text x="608" y="70" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#141414">VPN off / untrusted Wi-Fi</text>
+
+  <g transform="translate(316 0)">
+    <!-- protected half: yellow, round eye -->
+    <g clip-path="url(#left)">
+      <use href="#shape" fill="#FFCC00"/>
+      <circle cx="40" cy="62" r="9" fill="#141414"/>
+      <circle cx="43" cy="59" r="3" fill="#FFFFFF"/>
+      <use href="#beak"/>
+    </g>
+    <!-- exposed half: green, crossed-out eye -->
+    <g clip-path="url(#right)">
+      <use href="#shape" fill="#8FCB3C"/>
+      <path d="M79 53 L97 71 M97 53 L79 71" stroke="#141414" stroke-width="7" stroke-linecap="round"/>
+      <use href="#beak"/>
+    </g>
+    <!-- the cut -->
+    <path d="M77.5 16 L47.8 121.5" stroke="#141414" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>
