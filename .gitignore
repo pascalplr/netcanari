@@ -1,0 +1,4 @@
+.DS_Store
+canari
+*.o
+IconData.swift

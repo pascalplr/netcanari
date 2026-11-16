@@ -1,0 +1,3 @@
+# Lets stealth-auto.sh toggle the firewall's stealth mode without a password.
+# Limited to these two exact commands. __USER__ is replaced by install.sh.
+__USER__ ALL=(root) NOPASSWD: /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on, /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode off

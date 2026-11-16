@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="A green canary's head with crossed-out eyes">
+  <g fill="#8FCB3C" stroke="#141414" stroke-width="5" stroke-linejoin="round">
+    <!-- crest -->
+    <path d="M48 26 Q50 4 62 18 Q66 0 75 17 Q88 6 82 30 Z"/>
+    <!-- head -->
+    <circle cx="64" cy="72" r="52"/>
+  </g>
+  <!-- eyes -->
+  <g stroke="#141414" stroke-width="7" stroke-linecap="round">
+    <path d="M31 53 L49 71 M49 53 L31 71"/>
+    <path d="M79 53 L97 71 M97 53 L79 71"/>
+  </g>
+  <!-- beak -->
+  <path d="M64 72 L80 87 L64 106 L48 87 Z" fill="#FF8A00"/>
+  <path d="M48 87 H80" stroke="#C96300" stroke-width="3" stroke-linecap="round"/>
+</svg>

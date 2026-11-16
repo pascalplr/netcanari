@@ -1,0 +1,14 @@
+# Optional settings; copy to ~/.config/canari/config if you need them.
+# Trusted networks and the accepted tunnel are not set here: they are managed from
+# the canary's menu and live in ~/.config/canari/trusted and ~/.config/canari/tunnel.
+
+# The Mac's Wi-Fi interface.
+WIFI_INTERFACE="en0"
+
+# Optional hooks run by stealth-auto.sh each time the Mac moves between a trusted
+# network and anywhere else.
+# To simply disconnect the VPN on trusted networks, tick the option in the menu
+# instead. Example for something finer: keep Tailscale connected at home but stop
+# using the exit node, and pick it again everywhere else.
+#ON_TRUSTED="/Applications/Tailscale.app/Contents/MacOS/Tailscale set --exit-node="
+#ON_UNTRUSTED="/Applications/Tailscale.app/Contents/MacOS/Tailscale set --exit-node=my-exit-node"
